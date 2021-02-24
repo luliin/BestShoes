@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <top>
+      <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="100.0" prefWidth="1300.0" stylesheets="@../styling/styling.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="228.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@../img/BestShoesLogo.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0" HBox.hgrow="ALWAYS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <ToolBar prefHeight="96.0" prefWidth="633.0" styleClass="menu-bar" stylesheets="@../styling/styling.css" VBox.vgrow="ALWAYS">
+                    <items>
+                        <MenuButton fx:id="womensViewButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#changeView" prefHeight="50.0" prefWidth="129.0" styleClass="main-pane-color" stylesheets="@../styling/styling.css" text="DAM" textAlignment="RIGHT">
+                          <items>
+                              <MenuItem fx:id="womensView" mnemonicParsing="false" onAction="#changeView" text="Alla damskor" />
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                            <MenuItem fx:id="womensSport" mnemonicParsing="false" onAction="#changeView" text="Sportskor" />
+                              <MenuItem fx:id="womensParty" mnemonicParsing="false" onAction="#changeView" text="Fest" />
+                            <MenuItem fx:id="womensIndoor" mnemonicParsing="false" onAction="#changeView" text="Inneskor" />
+                              <MenuItem fx:id="womensOutdoor" mnemonicParsing="false" onAction="#changeView" text="Friluft" />
+                          </items>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </MenuButton>
+                        <MenuButton fx:id="mensView" alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="129.0" styleClass="main-pane-color" text="HERR">
+                           <items>
+                              <MenuItem fx:id="mensViewButton" mnemonicParsing="false" onAction="#changeView" text="Alla herrskor" />
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <MenuItem fx:id="mensSport" mnemonicParsing="false" onAction="#changeView" text="Sportskor" />
+                              <MenuItem fx:id="mensSport" mnemonicParsing="false" onAction="#changeView" text="Fest" />
+                              <MenuItem fx:id="mensIndoor" mnemonicParsing="false" onAction="#changeView" text="Inneskor" />
+                              <MenuItem fx:id="mensOutdoor" mnemonicParsing="false" onAction="#changeView" text="Friluft" />
+                           </items>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </MenuButton>
+                        <MenuButton fx:id="kidsViewButton" alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="129.0" styleClass="main-pane-color" text="BARN">
+                           <items>
+                              <MenuItem fx:id="childView" mnemonicParsing="false" onAction="#changeView" text="Alla barnskor" />
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <MenuItem fx:id="kidsSport" mnemonicParsing="false" onAction="#changeView" text="Sportskor" />
+                              <MenuItem fx:id="kidsParty" mnemonicParsing="false" onAction="#changeView" text="Fest" />
+                              <MenuItem fx:id="kidsIndoor" mnemonicParsing="false" onAction="#changeView" text="Inneskor" />
+                              <MenuItem fx:id="kidsOutdoor" mnemonicParsing="false" onAction="#changeView" text="Friluft" />
+                           </items>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </MenuButton>
+                        <MenuButton fx:id="accessoriesView" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="25.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" prefWidth="129.0" styleClass="main-pane-color" stylesheets="@../styling/styling.css" text="SKOTILLBEHÖR" textAlignment="RIGHT">
+                           <items>
+                              <MenuItem fx:id="accessoriesView" mnemonicParsing="false" onAction="#changeView" text="Alla skotillbehör" />
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <MenuItem fx:id="shoeAccessories_1" mnemonicParsing="false" onAction="#changeView" text="Skovård" />
+                              <MenuItem fx:id="shoeAccessories_2" mnemonicParsing="false" onAction="#changeView" text="Skosulor" />
+                              <MenuItem fx:id="shoeAccessories_3" mnemonicParsing="false" onAction="#changeView" text="Övrigt" />
+                           </items>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </MenuButton>
+                        <MenuButton alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="50.0" styleClass="main-pane-color" stylesheets="@../styling/styling.css" text="VARUMÄRKEN" textAlignment="RIGHT">
+                           <items>
+                              <MenuItem fx:id="brandView" mnemonicParsing="false" onAction="#changeView" text="Alla varumärken" />
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                           </items>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </MenuButton>
+                    </items>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ToolBar>
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </VBox>
+            <Pane prefHeight="98.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER" maxWidth="230.0" prefHeight="98.0" prefWidth="59.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="homeView" alignment="CENTER" graphicTextGap="18.0" mnemonicParsing="false" onAction="#changeViewButton" prefHeight="66.0" prefWidth="163.0" text="Hem" textFill="#fad335" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="transparent" />
+                        <String fx:value="home-button" />
+                     </styleClass>
+                     <graphic>
+                        <FontAwesomeIcon glyphName="CHEVRON_CIRCLE_LEFT" size="36" textAlignment="CENTER" wrappingWidth="32.0" />
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" maxWidth="200.0" prefHeight="98.0" prefWidth="87.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="exitButton" alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="0.0" mnemonicParsing="false" onAction="#exit" prefHeight="66.0" prefWidth="160.0" text="Avsluta" textAlignment="CENTER" textFill="#fad335" wrapText="true" VBox.vgrow="ALWAYS">
+                     <styleClass>
+                        <String fx:value="transparent" />
+                        <String fx:value="home-button" />
+                     </styleClass>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon glyphName="SIGN_OUT" size="36" textAlignment="CENTER" wrappingWidth="73.0">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </FontAwesomeIcon>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         <styleClass>
+            <String fx:value="top-pane-color" />
+            <String fx:value="top-pane-color" />
+            <String fx:value="top-menu" />
+         </styleClass>
+      </HBox>
+   </top>
+   <center>
+      <BorderPane fx:id="mainView" styleClass="main-pane-color" stylesheets="@../styling/styling.css">
+         <center>
+            <fx:include source="homeViewUI.fxml" />
+         </center>
+         <top>
+            <HBox maxHeight="-Infinity" prefHeight="40.0" prefWidth="1300.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane maxHeight="40.0" prefWidth="1000.0" HBox.hgrow="ALWAYS" />
+                  <VBox alignment="CENTER" maxHeight="40.0" prefHeight="40.0" prefWidth="224.0" style="-fx-background-color: -dark-gradient;" stylesheets="@../styling/styling.css">
+                     <children>
+                        <MenuButton fx:id="userButton" maxHeight="30.0" mnemonicParsing="false" styleClass="user-menu-button" text="Gäst">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Logga in" />
+                          </items>
+                           <graphic>
+                              <FontAwesomeIcon fill="#1b1b1b" glyphName="USER" selectionEnd="0" selectionStart="0" size="20" />
+                           </graphic>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </MenuButton>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="40.0" prefWidth="224.0" style="-fx-background-color: -dark-gradient;" stylesheets="@../styling/styling.css">
+                     <children>
+                        <Button fx:id="viewCart" graphicTextGap="15.0" maxHeight="30.0" mnemonicParsing="false" onAction="#changeView" styleClass="cart-button" text="Varukorg" textFill="#5b5b5b" VBox.vgrow="ALWAYS">
+                           <graphic>
+                              <FontAwesomeIcon fill="#1b1b1b" glyphName="SHOPPING_CART" selectionEnd="0" selectionStart="0" size="20" />
+                           </graphic>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </center>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox styleClass="main-pane-color" stylesheets="@../styling/styling.css" HBox.hgrow="ALWAYS">
+               <children>
+                  <Pane HBox.hgrow="ALWAYS" />
+                  <VBox prefHeight="41.0" prefWidth="123.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" prefHeight="25.0" prefWidth="119.0" text="Du hittar oss på" VBox.vgrow="ALWAYS">
+                           <graphic>
+                              <FontAwesomeIcon fill="#3b5998" glyphName="FACEBOOK" size="25" textAlignment="CENTER" wrappingWidth="24.85714292526245" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="41.0" prefWidth="34.0">
+                     <children>
+                        <FontAwesomeIcon glyphName="INSTAGRAM" size="25" styleClass="instagram" wrappingWidth="24.85714292526245">
+                           <fill>
+                              <RadialGradient centerX="0.6388888888888891" centerY="0.7857142857142857" focusAngle="62.7" focusDistance="0.5581395348837208" radius="0.8139534883720929">
+                                 <stops>
+                                    <Stop color="#fdf497" />
+                                    <Stop color="#fdf497" offset="0.01532567049808429" />
+                                    <Stop color="#fdf497" offset="0.1069637002804438" />
+                                    <Stop color="#fd5949" offset="0.4487893510289525" />
+                                    <Stop color="#d6249f" offset="0.783623652091479" />
+                                    <Stop color="#2a5eeb" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </fill>
+                        </FontAwesomeIcon>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="133.0" layoutY="10.0" prefHeight="41.0" prefWidth="34.0">
+                     <children>
+                        <FontAwesomeIcon fill="#1da1f2" glyphName="TWITTER" size="25" wrappingWidth="24.85714292526245" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

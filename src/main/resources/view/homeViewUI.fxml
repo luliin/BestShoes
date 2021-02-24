@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane styleClass="main-pane-color" stylesheets="@../styling/styling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <center>
+      <VBox prefHeight="600.0" prefWidth="1300.0" styleClass="main-pane-color" stylesheets="@../styling/styling.css">
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="218.0" prefWidth="316.0" HBox.hgrow="ALWAYS" />
+                  <VBox prefHeight="199.0" prefWidth="449.0">
+                     <children>
+                        <ImageView fitHeight="243.0" fitWidth="493.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                           <image>
+                              <Image url="@../img/BestShoesLogo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <Pane layoutX="503.0" layoutY="10.0" prefHeight="218.0" prefWidth="316.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox prefHeight="291.0" prefWidth="1300.0" VBox.vgrow="SOMETIMES">
+               <children>
+                  <Pane prefHeight="218.0" prefWidth="316.0" HBox.hgrow="ALWAYS" />
+                  <VBox prefHeight="237.0" prefWidth="294.0" styleClass="top-pane-color" stylesheets="@../styling/styling.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-text-fill: -dark-yellow;" text="ANGE ANVÄNDARNAMN" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-text-fill: -dark-yellow;" text="ANGE LÖSENORD" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="237.0" prefWidth="378.0" style="-fx-background-color: -dark-gradient;" stylesheets="@../styling/styling.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <TextField alignment="CENTER" prefHeight="59.0" prefWidth="310.0" promptText="ANGE ANVÄNDARNAMN" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <PasswordField alignment="CENTER" prefHeight="59.0" prefWidth="310.0" promptText="ANGE LÖSENORD" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="134.0" layoutY="10.0" prefHeight="79.0" prefWidth="95.0" />
+                              <VBox alignment="CENTER" prefHeight="79.0" prefWidth="140.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clearText" styleClass="cart-button" text="Rensa" />
+                                 </children>
+                              </VBox>
+                              <Pane prefHeight="79.0" prefWidth="80.0" HBox.hgrow="ALWAYS" />
+                              <VBox alignment="CENTER" prefHeight="79.0" prefWidth="140.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="loginButton" mnemonicParsing="false" onAction="#confirmLogin" styleClass="cart-button" text="Logga in" />
+                                 </children>
+                              </VBox>
+                              <Pane layoutX="156.0" layoutY="10.0" prefHeight="79.0" prefWidth="95.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="218.0" prefWidth="316.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="218.0" prefWidth="316.0" />
+                  <VBox alignment="BOTTOM_CENTER" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="errorMessageLabel" text="FELAKTIGT LÖSENORD ELLER ANVÄNDARNAMN, FÖRSÖK IGEN!" />
+                     </children>
+                  </VBox>
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="218.0" prefWidth="316.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <VBox prefHeight="88.0" prefWidth="184.0" />
+         </children>
+      </VBox>
+   </center>
+   <padding>
+      <Insets bottom="10.0" top="10.0" />
+   </padding>
+</BorderPane>

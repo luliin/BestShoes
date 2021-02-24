@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane styleClass="main-pane-color" stylesheets="@../styling/styling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <center>
+      <VBox prefHeight="600.0" prefWidth="1300.0" styleClass="main-pane-color" stylesheets="@../styling/styling.css">
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="88.0" prefWidth="184.0" />
+                  <VBox prefHeight="100.0" prefWidth="173.0" />
+                  <VBox prefHeight="199.0" prefWidth="449.0">
+                     <children>
+                        <ImageView fitHeight="243.0" fitWidth="493.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/BestShoesLogo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="86.0" prefWidth="1300.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <VBox prefHeight="88.0" prefWidth="184.0" />
+         </children>
+      </VBox>
+   </center>
+   <padding>
+      <Insets bottom="10.0" top="10.0" />
+   </padding>
+</BorderPane>
