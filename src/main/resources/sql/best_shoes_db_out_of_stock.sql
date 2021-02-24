@@ -1,0 +1,2 @@
+INSERT INTO best_shoes_db.out_of_stock (out_of_stock_id, item_model_id, created, updated) VALUES (1, 2087, '2021-02-24 00:56:03', '2021-02-24 00:56:03');
+INSERT INTO best_shoes_db.out_of_stock (out_of_stock_id, item_model_id, created, updated) VALUES (2, 2086, '2021-02-24 01:27:43', '2021-02-24 01:27:43');

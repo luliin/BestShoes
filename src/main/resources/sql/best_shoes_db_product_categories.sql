@@ -1,0 +1,4 @@
+INSERT INTO best_shoes_db.product_categories (product_category_id, type, created, updated) VALUES (1, 'Skor', '2021-02-16 15:51:54', '2021-02-16 15:51:54');
+INSERT INTO best_shoes_db.product_categories (product_category_id, type, created, updated) VALUES (2, 'Paraplyer', '2021-02-16 15:51:54', '2021-02-16 15:51:54');
+INSERT INTO best_shoes_db.product_categories (product_category_id, type, created, updated) VALUES (3, 'Skotillbehör', '2021-02-16 15:51:54', '2021-02-16 15:51:54');
+INSERT INTO best_shoes_db.product_categories (product_category_id, type, created, updated) VALUES (4, 'Övrigt', '2021-02-16 15:51:54', '2021-02-16 15:51:54');

@@ -1,0 +1,16 @@
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (1, 'Damskor', 1, '2021-02-16 15:51:54', '2021-02-23 01:19:13');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (2, 'Herrskor', 2, '2021-02-16 15:51:54', '2021-02-23 01:19:13');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (3, 'Barnskor', 3, '2021-02-16 15:51:54', '2021-02-23 01:19:13');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (4, 'Promenadskor', 0, '2021-02-16 15:51:54', '2021-02-16 15:51:54');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (5, 'Sneakers', 0, '2021-02-16 15:51:54', '2021-02-16 15:51:54');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (6, 'Pumps', 1, '2021-02-16 15:51:54', '2021-02-23 01:19:13');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (7, 'Sandaler', 0, '2021-02-16 15:51:54', '2021-02-16 15:51:54');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (8, 'Kängor', 0, '2021-02-16 15:51:54', '2021-02-16 15:51:54');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (9, 'Badskor', 0, '2021-02-16 15:51:54', '2021-02-16 15:51:54');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (10, 'Tofflor', 0, '2021-02-16 15:51:54', '2021-02-16 15:51:54');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (11, 'Finskor', 0, '2021-02-16 15:51:54', '2021-02-16 15:51:54');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (12, 'Sportskor', 0, '2021-02-16 15:51:54', '2021-02-16 15:51:54');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (13, 'Skovård', 4, '2021-02-16 15:51:54', '2021-02-23 01:19:13');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (14, 'Innersulor', 4, '2021-02-16 15:51:54', '2021-02-23 01:19:13');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (15, 'Skosnören', 4, '2021-02-16 15:51:54', '2021-02-23 01:19:13');
+INSERT INTO best_shoes_db.subcategories (subcategory_id, type, flag, created, updated) VALUES (16, 'REA', 0, '2021-02-16 15:51:54', '2021-02-16 15:51:54');
